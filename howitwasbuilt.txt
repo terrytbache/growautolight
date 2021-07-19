@@ -1,0 +1,31 @@
+### Installing Apache on Raspberry Pi
+//Get on to the terminal and update your operating system by typing:
+
+      sudo apt update && sudo apt upgrade -y
+
+//When the updates are complete, install Apache with this command:
+
+      sudo apt install apache2 -y
+
+//You can now test that Apache has installed properly by browsing to your Raspberry Pi. If you’re using the Pi’s web browser, type http://localhost.com/ into the address bar.
+//From elsewhere on your local network, you will need to use the IP address. If you don’t know this already, you can get it with this command:
+
+      hostname -I
+
+### Congratulations, You Have a Web Server
+
+##Installing PHP
+//Adding PHP functionality to Apache requires just one command:
+
+      sudo apt install php libapache2-mod-php -y
+
+//Test whether this works by replacing the index page with one that’s rendered in PHP. Delete index.html and open a new file in nano called index.php.
+
+      sudo rm /var/www/html/index.html
+      sudo nano /var/www/html/index.php
+
+//Now type this line and then save the file:
+
+      <?php phpinfo(); ?>
+
+//Now reload the page in the browser, just type in the r.pi's ip address into any web browser on the network
