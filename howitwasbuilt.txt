@@ -1,4 +1,4 @@
-sourcce:  https://www.deviceplus.com/raspberry-pi/how-to-use-a-raspberry-pi-as-a-web-server/
+source:  https://www.deviceplus.com/raspberry-pi/how-to-use-a-raspberry-pi-as-a-web-server/
 
 ### Installing Apache on Raspberry Pi
 //Get on to the terminal and update your operating system by typing:
